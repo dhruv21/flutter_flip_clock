@@ -26,9 +26,6 @@ class _FlipClockScreenState extends State<FlipClockScreen>
       (Timer timer) {
         DateTime currentTime = DateTime.now();
 
-        print(currentTime.second);
-        print(currentTime.minute);
-
         if (currentTime.second == 00) {
           setState(() {
             _minutes = currentTime.minute;
